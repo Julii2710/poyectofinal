@@ -1,0 +1,136 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body .contenido {
+  flex: 1;
+}
+
+main,
+.fondomain {
+  background-color: rgb(168, 168, 152);
+}
+
+.fondo,
+.fondo2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/background/background.png) no-repeat center center;
+  background-size: cover;
+}
+
+.texto,
+.texto2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.texto.texto2,
+.texto2.texto2 {
+  margin-bottom: 20px;
+}
+@media (max-width: 400px) {
+  .texto,
+  .texto2 {
+    padding: 20px;
+    width: 95%;
+  }
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10vh;
+  gap: 10vh;
+  justify-content: center;
+}
+.contenedor .card {
+  flex: 0 0 22%;
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.contenedor .card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .contenedor .card {
+    flex: 0 0 100%;
+  }
+}
+
+.precio {
+  font-size: 2.7vh;
+  color: green;
+  font-weight: bold;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondoconsola,
+.fondoretro,
+.fondogames {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fondoconsola {
+  background-image: url(/img/background/consolabackground.jpeg);
+}
+
+.fondoretro {
+  background-image: url(/img/background/retrobackground.jpg);
+}
+
+.fondogames {
+  background-image: url(/img/background/background2.jpg);
+}
+
+.pecausa {
+  font-size: 2.3vh;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

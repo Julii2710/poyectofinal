@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  .contenido {
+    flex: 1;
+  }
+}
+
+main,
+.fondomain {
+  background-color: rgb(168, 168, 152);
+}
+
+.fondo,
+.fondo2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/img/background/background.png) no-repeat center center;
+  background-size: cover;
+}
+
+.texto,
+.texto2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+
+  &.texto2 {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 20px;
+    width: 95%;
+  }
+}

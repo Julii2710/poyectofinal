@@ -1,0 +1,61 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10vh;
+  gap: 10vh;
+  justify-content: center;
+
+  .card {
+    flex: 0 0 22%;
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.precio {
+  font-size: 2.7vh;
+  color: green;
+  font-weight: bold;
+}
+
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fondoconsola,
+.fondoretro,
+.fondogames {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+  &.fondoconsola {
+    background: url(/img/background/consolabackground.jpeg) no-repeat center center;
+  }
+
+  &.fondoretro {
+    background: url(/img/background/retrobackground.jpg) no-repeat center center;
+  }
+
+  &.fondogames {
+    background: url(/img/background/background2.jpg) no-repeat center center;
+  }
+}
