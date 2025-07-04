@@ -27,7 +27,7 @@ main,
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/img/background/background.png) no-repeat center center;
+  background: url(../img/background/background.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -106,15 +106,15 @@ main,
 }
 
 .fondoconsola {
-  background-image: url(/img/background/consolabackground.jpeg);
+  background-image: url(../img/background/consolabackground.jpeg);
 }
 
 .fondoretro {
-  background-image: url(/img/background/retrobackground.jpg);
+  background-image: url(../img/background/retrobackground.jpg);
 }
 
 .fondogames {
-  background-image: url(/img/background/background2.jpg);
+  background-image: url(../img/background/background2.jpg);
 }
 
 .pecausa {
